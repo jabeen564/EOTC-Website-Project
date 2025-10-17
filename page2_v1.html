@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- This is the lil blurb that shows up in Google or tabs – explains what the site's about -->
+	<meta name="description" content="Learn more about what Tawa college provides, for the year 10 students EOTC week!"/>
+	<!-- These are basically search keywords – not shown on the page, just helps people find it -->
+	<meta name="keywords" content="Year 10 EOTC week, Tawa college, Wainuiomata camp, Rangituhi walk, Community service, Year 10 EOTC Programme"/>
+	<!-- Who made this website -->
+	<meta name="author" content="Jabeen Abdul Jabbar"/>
+	<title>COMMUNITY SERVICE</title>
+	<!-- linking CSS -->
+	<link rel="stylesheet" href="css/style2_v1.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+	<!-- this bootstrap is for burger menu + responsiveness -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+		<body>
+			<div class="hero-section">
+				<div class="top-text-wrapper">
+					<h1>Community Service Day</h1>
+					<h2>Making a Difference in Our Community</h2>
+				</div>
+			</div>
+			<!-- === NAVIGATION WRAP === -->
+			<div class="nav-wrap">
+				<nav class="navbar navbar-expand-md">
+				<div class="container">
+					<!-- burger button -->
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<!-- nav links collapse -->
+					<div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+						<ul class="navbar-nav">
+							<li class="nav-item"><a class="nav-link" href="index_v1.html">HOME</a></li>
+							<li class="nav-item"><a class="nav-link" href="page2_v1.html">COMMUNITY SERVICE</a></li>
+							<li class="nav-item"><a class="nav-link" href="page3_v1.html">OUTDOOR ACTIVITIES</a></li>
+							<li class="nav-item"><a class="nav-link" href="page4_v1.html">CONTACT</a></li>
+						</ul>
+					</div>
+				</div>
+				</nav>
+			</div>
+			<!-- === ABOUT COMMUNITY SERVICE SECTION === -->
+			<section class="about-service">
+			<div class="container">
+				<!-- main heading for the section -->
+				<h2>About Community Service</h2>
+				<!-- paragraph describing the day -->
+				<p>
+					 Students will complete one day of community service assisting local residents and businesses. This will usually occur within walking distance of Tawa College for all Year 10 students. This day has the key focus of citizenship and has been a great success in previous years.
+				</p>
+				<p>
+					 Students will spend a day completing community service in a small group with friends in the Tawa basin, supervised by a staff member. This is a highly valuable experience where students have the chance to interact with the elderly helping them with gardening, painting etc or assisting local food banks, kindergartens, hospice shops and charities for the day.
+				</p>
+			</div>
+			</section>
+			<!-- === SERVICES SECTION === -->
+			<section class="services-section">
+			<h2 class="section-title">Community Service Activities</h2>
+			<!-- container holds all the service cards in 4 column grid -->
+			<div class="cards-container">
+				<!-- Card 1: Gardening & Painting -->
+				<div class="card">
+					<img src="images/image.png" alt="Gardening and Painting Icon">
+					<h3>Gardening & Painting</h3>
+					<p>
+						Students will help local residents by tidying gardens, planting flowers, and painting fences or walls. This hands-on work supports the community and brightens shared spaces around Tawa.
+					</p>
+				</div>
+				<!-- Card 2: Food Banks -->
+				<div class="card">
+					<img src="images/image.png" alt="Food Banks Icon">
+					<h3>Food Banks</h3>
+					<p>
+						Students will assist local food banks by sorting, packing, and distributing food to families in need. This activity helps provide essential support to those facing hardship in the community.
+					</p>
+				</div>
+				<!-- Card 3: Kindergartens -->
+				<div class="card">
+					<img src="images/image.png" alt="Kindergartens Icon">
+					<h3>Kindergartens</h3>
+					<p>
+						Students will spend the day helping at local kindergartens — supporting teachers, engaging with children, and assisting with creative or outdoor activities.
+					</p>
+				</div>
+				<!-- Card 4: Hospice Shops & Charities -->
+				<div class="card">
+					<img src="images/image.png" alt="Hospice Shops and Charities Icon">
+					<h3>Hospice Shops & Charities</h3>
+					<p>
+						Students will lend a hand in local hospice shops and charities by organising items, helping customers, or assisting with store displays. Their support helps raise funds for important community causes.
+					</p>
+				</div>
+			</div>
+			</section>
+			<!-- === CAROUSEL + TIMETABLE SECTION === -->
+			<section class="carousel-timetable-section">
+			<!-- use a 12-column grid so we can control columns / rows explicitly -->
+			<div class="side-by-side-wrapper">
+				<!-- carousel sits here; kept as pure HTML + CSS (radio buttons) -->
+				<div class="community-carousel">
+					<div class="carousel-container">
+						<!-- radio buttons control which slide is shown -->
+						<input type="radio" name="community-carousel" id="community-slide1" class="carousel-radio" checked>
+						<div class="carousel-slide">
+							<img src="images/image.png" alt="Community Service image 1">
+						</div>
+						<input type="radio" name="community-carousel" id="community-slide2" class="carousel-radio">
+						<div class="carousel-slide">
+							<img src="images/chhungli.png" alt="Community Service image 2">
+						</div>
+						<input type="radio" name="community-carousel" id="community-slide3" class="carousel-radio">
+						<div class="carousel-slide">
+							<img src="images/fridge.jpg" alt="Community Service image 3">
+						</div>
+						<!-- navigation arrows for carousel - labels target the radios -->
+						<label for="community-slide3" class="carousel-nav carousel-prev community-prev-1">❮</label>
+						<label for="community-slide2" class="carousel-nav carousel-next community-next-1">❯</label>
+						<label for="community-slide1" class="carousel-nav carousel-prev community-prev-2">❮</label>
+						<label for="community-slide3" class="carousel-nav carousel-next community-next-2">❯</label>
+						<label for="community-slide2" class="carousel-nav carousel-prev community-prev-3">❮</label>
+						<label for="community-slide1" class="carousel-nav carousel-next community-next-3">❯</label>
+					</div>
+				</div>
+				<!-- timetable sits here; same content, changed layout visually using grid -->
+				<div class="timetable">
+					<h2>Day Timetable</h2>
+					<div class="timetable-list">
+						<div class="time-block">
+							<div class="time">
+								9:15 am – 9:45 am
+							</div>
+							<div class="details">
+								<p>
+									Meet in the school gym for roll call and briefing. Staff will outline safety guidelines, distribute job allocations, and confirm supervision groups before heading out.
+								</p>
+							</div>
+						</div>
+						<div class="time-block">
+							<div class="time">
+								9:45 am – 10:00 am
+							</div>
+							<div class="details">
+								<p>
+									Students walk with their assigned groups and supervising teacher to their community service locations within the Tawa area.
+								</p>
+							</div>
+						</div>
+						<div class="time-block">
+							<div class="time">
+								10:00 am – 12:30 pm
+							</div>
+							<div class="details">
+								<p>
+									Begin morning community service activities — gardening, painting, assisting at kindergartens, food banks, or local charities. Students will work in small teams to support local residents and businesses.
+								</p>
+							</div>
+						</div>
+						<div class="time-block">
+							<div class="time">
+								12:30 pm – 1:00 pm
+							</div>
+							<div class="details">
+								<p>
+									Lunch break. Students can rest, eat, and rehydrate at their work sites or a nearby safe area under teacher supervision.
+								</p>
+							</div>
+						</div>
+						<div class="time-block">
+							<div class="time">
+								1:00 pm – 3:00 pm
+							</div>
+							<div class="details">
+								<p>
+									Continue afternoon community service tasks, completing any remaining jobs and tidying up work areas. Staff will check progress and assist where needed.
+								</p>
+							</div>
+						</div>
+						<div class="time-block">
+							<div class="time">
+								3:00 pm – 3:15 pm
+							</div>
+							<div class="details">
+								<p>
+									Groups return to Tawa College, sign out with their supervising teacher, and debrief briefly about their experiences before dismissal.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</section>
+			<!-- === FAQ SECTION === -->
+			<section class="faq-section">
+			<h2 class="section-title">Frequently Asked Questions</h2>
+			<!-- Question 1 -->
+			<div class="faq-item">
+				<div class="faq-question">
+					<span class="faq-icon">+</span> What do I need to bring?
+				</div>
+				<div class="faq-answer">
+					<p>
+						A day pack with your lunch, water bottle, sun hat, warm jumper, rain jacket, and any medication you need. Wear old clothes suitable for gardening, painting, or charity work, and closed-toed shoes.
+					</p>
+				</div>
+			</div>
+			<!-- Question 2 -->
+			<div class="faq-item">
+				<div class="faq-question">
+					<span class="faq-icon">+</span> Can I work with my friends?
+				</div>
+				<div class="faq-answer">
+					<p>
+						Yes! Students will usually be in small groups with friends, supervised by a staff member.
+					</p>
+				</div>
+			</div>
+			<!-- Question 3 -->
+			<div class="faq-item">
+				<div class="faq-question">
+					<span class="faq-icon">+</span> Will we be walking far?
+				</div>
+				<div class="faq-answer">
+					<p>
+						Most jobs are within walking distance of Tawa College. A very small number may involve a short drive with staff supervision.
+					</p>
+				</div>
+			</div>
+			<!-- Question 4 -->
+			<div class="faq-item">
+				<div class="faq-question">
+					<span class="faq-icon">+</span> What if it rains?
+				</div>
+				<div class="faq-answer">
+					<p>
+						The day will still go ahead unless there is torrential rain. Bring a rain jacket and warm clothes just in case.
+					</p>
+				</div>
+			</div>
+			</section>
+			<!-- === FOOTER SECTION === -->
+			<footer class="site-footer">
+			<p>
+				© Tawa College 2025, All rights reserved.
+			</p>
+			</footer>
+			<!-- === BACK TO TOP BUTTON === -->
+			<button id="backToTopBtn" title="Go to top">↑</button>
+			<!-- this is to make back to top + faq toggle work -->
+			<script src="js/backtotop.js"></script>
+			<script src="js/faq-toggle.js"></script>
+			<!-- this bootstrap is for burger menu to work properly -->
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
