@@ -1,56 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- This is the lil blurb that shows up in Google or tabs – explains what the site’s about -->
-    <meta name="description" content="Learn more about what Tawa college provides, for the year 10 students EOTC week!" />
-
-    <!-- These are basically search keywords – not shown on the page, just helps people find it -->
-    <meta name="keywords" content="Year 10 EOTC week, Tawa college, Wainuiomata camp, Rangituhi walk, Community service, Year 10 EOTC Programme" />
-
-    <!-- Who made this website -->
-    <meta name="author" content="Jabeen Abdul Jabbar" />
-
-    <title>YEAR 10 EOTC week</title>
-
-    <!-- Linking to my CSS file so the styles actually apply -->
-    <link rel="stylesheet" href="css/style_v1.css" />
-</head>
-<body>
- 	<div class="intro">
-		<h1>YEAR 10 EOTC WEEK</h1>
-	  <p>add body text here</p>
-	  <a href="#" class="button" id="explore-button">BUTTON</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- This is the lil blurb that shows up in Google or tabs – explains what the site's about -->
+        <meta name="description" content="Learn more about what Tawa college provides, for the year 10 students EOTC week!" />
+        <!-- These are basically search keywords – not shown on the page, just helps people find it -->
+        <meta name="keywords" content="Year 10 EOTC week, Tawa college, Wainuiomata camp, Rangituhi walk, Community service, Year 10 EOTC Programme" />
+        <!-- Who made this website -->
+        <meta name="author" content="Jabeen Abdul Jabbar" />
+        <title>YEAR 10 EOTC week</title>
+        <!-- Linking to my CSS file so the styles actually apply -->
+        <link rel="stylesheet" href="css/style_v1.css" />
+  		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+		
+	<!-- ===FIRST SECTION === -->
+	<div class="hero-section">
+    
+    	<!-- actual hero content -->
+		<div class="intro">
+			<h1>Nau mai ki te</h1>
+			<h1> tau 10, wiki EOTC</h1>
+			<p class="hero-subtitle">Experience learning beyond the classroom — Year 10 students build citizenship and awareness.</p>
+		</div>
 	</div>
 
+		<div class="nav-wrap">
+		  <nav class="navbar navbar-expand-md">
+			<div class="container">
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+					  aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+				<ul class="navbar-nav">
+				  <li class="nav-item"><a class="nav-link" href="index_v1.html">HOME</a></li>
+				  <li class="nav-item"><a class="nav-link" href="page2_v1.html">COMMUNITY SERVICE</a></li>
+				  <li class="nav-item"><a class="nav-link" href="page3_v1.html">OUTDOOR ACTIVITIES</a></li>
+				  <li class="nav-item"><a class="nav-link" href="page4_v1.html">CONTACT</a></li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+		</div>    
 
-    <!-- Pop-up menu (hidden until burger clicked) -->
-    <div class="popup-menu" id="popup-menu">
-        <!-- Close button (X) -->
-        <span class="close-btn" id="close-menu">X</span>
+        <div class="intro">
+              <p>As part of the Year 10 programme, students will be participating in four days of Education Outside the Classroom (EOTC). The focus of this programme is one of citizenship and social awareness.</p>
+        </div>
 
-        <!-- Navigation links -->
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="page2.html">ABOUT PROGRAMME</a></li>
-			<li><a href="page3.html">OUTDOOR ACTIVITIES</a></li>
-			<li><a href="page4.html">COMMUNNITY SERVICES</a></li>
-            <li><a href="page5.html">WAINUIOMATA CAMP</a></li>
-            <li><a href="page6.html">CONTACT PAGE</a></li>
-        </ul>
+        <div class="activity_section">
+            <div class="h1_activity_section">
+                <h1>FOUR DAYS OF ACTIVITIES</h1>
+            </div>
+            <hr style="width: 96%" />
+            <div class="breif_section">
+                <h2>Students will participate in the following activities throughout the week</h2>
+            </div>
+            
+			<div class="activity_images">
+                <div class="service_image">
+                    <img src="images/index_page/community-service.jpg" alt="Community Service">
+                    <h1>COMMUNITY SERVICE</h1>
+                    <h2 class="activity-desc">Give back to the local community</h2>
+                    <!-- new lil button sitting right under the short lines -->
+                    <button class="activity-btn">Learn More</button>
+                </div>
+              
+				<div class="outdoor_image">
+                    <img src="images/index_page/ranigtuhi_index.jpg" alt="Rangituhi Walk">
+                    <h1>RANGITUHI WALK</h1>
+                    <h2 class="activity-desc">Experience the outdoors</h2>
+                    <!-- new lil button sitting right under the short lines -->
+                    <button class="activity-btn">Learn More</button>
+                </div>
+               
+				<div class="camp_image">
+                    <img src="images/index_page/wainuiomata.jpg" alt="Wainuiomata Camp">
+                    <h1>WAINUIOMATA CAMP</h1>
+                    <h2 class="activity-desc">Team building adventures</h2>
+                    <!-- new lil button sitting right under the short lines -->
+                    <button class="activity-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+		
+		 <div class="slider-container">
+  <div class="slider">
+    <!-- Slide 1 -->
+    <div class="slide">
+      <img src="images/index_page/time-schedule.png" alt="Trip Schedule">
+      <div class="slide-content">
+        <h2>Trip Schedule</h2>
+        <p class="info-text">Each student will be given a timetable informing them of which trip they will do on which day. These trips will run from Tuesday 3 December to Friday 6 December. All of these trips will depart from Tawa College at 8:35am and will return by 3:20pm. Click on the links to see your Timetable for the Week: <a href="https://tawa-college-eotc.neocities.org/forms/Group%201.pdf" target="_blank">Group 1</a>, <a href="https://tawa-college-eotc.neocities.org/forms/Group%202.pdf" target="_blank">Group 2</a>, <a href="https://tawa-college-eotc.neocities.org/forms/Group%203.pdf" target="_blank">Group 3</a>, <a href="https://tawa-college-eotc.neocities.org/forms/Group%204.pdf" target="_blank">Group 4</a>.</p>
+      </div>
     </div>
-	
-	<div class= "images_four">
-		<div class= "community_service"> <img src= "images/image.png"><div class="overlay"><div class="text">add activity</div></div></div>
-		<div class= "rangituhi_walk"> <img src= "images/image.png"><div class="overlay"><div class="text">add activity</div></div></div>
-		<div class= "forest"> <img src= "images/image.png"><div class="overlay"><div class="text">add activity</div></div></div>
-		<div class= "camp"> <img src= "images/image.png"><div class="overlay"><div class="text">add activity</div></div></div>
-	</div>
 
-    <!-- ============================= -->
-	<!-- Your popup menu JavaScript - added here so elements exist before JS runs -->
-	<script src="js/popupmenu.js"></script>
-</body>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <img src="images/index_page/money.png" alt="Cost and Payment">
+      <div class="slide-content">
+        <h2>Cost and Payment</h2>
+        <p class="info-text">The total cost of the trips is $75.00 per student. This includes transport and the cost of all activities. Due to the nature of the activities and the fixed costs involved, there will be no refunds given. Payment is due before Friday 25 October. Please submit payment to the student office.</p>
+      </div>
+    </div>
+
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <img src="images/index_page/what-to-bring.png" alt="What to Bring">
+      <div class="slide-content">
+        <h2>What to Bring</h2>
+        <p class="info-text">Students are expected to bring a packed lunch on all of these days, as they will not have any opportunities to purchase lunch. Students will be required to wear appropriate mufti clothing on all days. This involves good walking/sports shoes, raincoat, sun block, and suitably warm clothing.</p>
+      </div>
+    </div>
+
+
+    <!-- Slide 4 -->
+    <div class="slide">
+      <img src="images/index_page/student-expectations.png" alt="Expectations">
+      <div class="slide-content">
+        <h2>Student Expectations</h2>
+        <p class="info-text">On all trips, students will be expected to abide by the school rules. This includes absolutely no cigarettes, drugs or alcohol. Students will be expected to conduct themselves in a manner that is respectful to both the supervising teachers and other students. It is essential that all students play their part in risk management and follow staff instructions at all times.</p>
+      </div>
+    </div>
+
+
+    <!-- Slide 5 -->
+    <div class="slide">
+      <img src="images/index_page/permission-form.png" alt="Permission Forms">
+      <div class="slide-content">
+        <h2>Permission Forms</h2>
+        <p class="info-text">If you have not already returned the permission forms given out earlier this term, then please collect another copy from the school office, and hand them in to the student office along with $75.00 before Friday 25 October. If you have already returned the permission forms, then you only need to pay the $75.00 before Friday 25 October.</p>
+      </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+      <img src="images/index_page/registration.png" alt="Registration">
+      <div class="slide-content">
+        <h2>Complete Your Registration</h2>
+        <p class="info-text">Don't forget to complete your online registration form! This form collects important information about dietary requirements, medical conditions, and emergency contacts. Please fill out the form as soon as possible to ensure we have all the necessary details for a safe and enjoyable EOTC week. <strong>Note: Please log in with your school account to access the form.</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9YPeh-iEUhcCGc1N2O6TqpKIcANYjg_QrG4A2BEe1KnzbPw/viewform" target="_blank">Click here to register</a>.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Navigation Arrows -->
+  <button class="arrow prev">&#10094;</button>
+  <button class="arrow next">&#10095;</button>
+
+
+  <!-- Navigation Dots -->
+  <div class="dots"></div>
+</div> 
+		
+		<!-- === IMAGE + TEXT SECTION === -->
+		<section class="content-section">
+			<!-- left side = big full image -->
+			<div class="image-half">
+				<img src="images//index_page/heart.jpg" alt="EOTC Activities">
+			</div>
+
+			<!-- right side = solid text box -->
+			<div class="text-half">
+				<div class="text-content">
+					<h2>Important Information</h2>
+					<hr>
+					<p class="info-text">All these activities are compulsory but have been designed to be both educational and fun. Students will be supervised at all times by Tawa College staff. Students will not be allowed to participate in these trips if they do not have the correct gear. If you have any difficulty supplying these required items, please indicate on the return form and we will endeavour to assist where possible.
+					</p>
+				</div>
+			</div>
+		</section>
+		
+			<!-- === FOOTER SECTION === -->
+	<footer class="site-footer">
+		<p>© Tawa College 2025, All rights reserved.</p>
+	</footer>
+
+		
+        <!-- Back to Top button -->
+        <button id="backToTopBtn" title="Go to top">↑</button>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- My javascript links -->
+        <script src="js/backtotop.js"></script>
+        <script src="js/slider.js"></script>
+
+
+        <!--this line is for the  burger menu to work -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
